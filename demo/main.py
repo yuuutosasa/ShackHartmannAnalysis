@@ -6,7 +6,7 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 from lib.grid import draw_grid
-from lib.shifts import *
+from lib.shifts import cut2zero, shifts
 
 # -----------------------------------------------------------------------------
 # MAIN CODE
