@@ -28,6 +28,9 @@ os.makedirs(output_dir, exist_ok=True)
 moments_file = os.path.join(output_dir, "moments_arrows.png")
 pc_file = os.path.join(output_dir, "PC_arrows.png")
 ncc_file = os.path.join(output_dir, "NCC_arrows.png")
+moments_array = os.path.join(output_dir, "moments_array.npy")
+pc_array = os.path.join(output_dir, "pc_array.npy")
+ncc_array = os.path.join(output_dir, "ncc_array.npy")
 
 # Read example image
 img = cv2.imread("mainImage.png", 0)
@@ -62,3 +65,7 @@ print("Complete", flush=True)
 shifts_moments = pad_result(shifts_PC, ref_center)
 shifts_PC = pad_result(shifts_PC, ref_center)
 shifts_NCC = pad_result(shifts_NCC, ref_center)
+
+np.save(moments_array, shifts_moments)
+np.save(pc_array, shifts_PC)
+np.save(ncc_array, shifts_NCC)
