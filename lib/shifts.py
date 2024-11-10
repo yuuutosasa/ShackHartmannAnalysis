@@ -12,16 +12,18 @@ from skimage.feature import match_template
 
 
 def generate_ref_center(
-    x_min, x_max, y_min, y_max, lens_pitch, shape=(48, 66, 2)
+    x_min, x_max, y_min, y_max, lens_pitch
 ):
     x_ref_repeat = np.arange(x_min, x_max + 1, lens_pitch)
     y_ref_repeat = np.arange(y_min, y_max + 1, lens_pitch)
+    print(x_ref_repeat.shape)
 
     ref_center = np.ndarray((len(x_ref_repeat) * len(y_ref_repeat), 2))
 
     x_grid, y_grid = np.meshgrid(x_ref_repeat, y_ref_repeat)
 
     # Combine the grids into a list of coordinate pairs
+    shape = (len(y_ref_repeat), len(x_ref_repeat), 2)
     ref_center = np.column_stack([x_grid.ravel(), y_grid.ravel()])
     ref_center = ref_center.reshape(shape)
     return ref_center

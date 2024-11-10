@@ -22,7 +22,7 @@ img = cv2.imread("mainImage.png", 0)
 img = (img.astype(np.float32) / 255.0) ** 3 * 255.0
 
 ref_center = generate_ref_center(
-    79.421, 1737.5, 27.45, 1226.4, 25.51, shape=(48, 66, 2)
+    79.421, 1737.5, 27.45, 1226.4, 25.51
 )
 
 print("Computing Moments...", end=" ", flush=True)
