@@ -11,12 +11,9 @@ from skimage.feature import match_template
 # -----------------------------------------------------------------------------
 
 
-def generate_ref_center(
-    x_min, x_max, y_min, y_max, lens_pitch
-):
+def generate_ref_center(x_min, x_max, y_min, y_max, lens_pitch):
     x_ref_repeat = np.arange(x_min, x_max + 1, lens_pitch)
     y_ref_repeat = np.arange(y_min, y_max + 1, lens_pitch)
-    print(x_ref_repeat.shape)
 
     ref_center = np.ndarray((len(x_ref_repeat) * len(y_ref_repeat), 2))
 
