@@ -5,7 +5,7 @@ Here is an example image of Shack-Hartmann wavefront sensor and result, showing 
 
 .. raw:: html
   <p align="center">
-    <img src="./demo/mainImage.png" alt="Moments Results" width="600">
+    <img src="./demo/mainImage.png" alt="Input data" width="600">
   </p>
   <p align="center">
     <img src="./demo/output/moments_result.png" alt="Moments Results" width="600">
