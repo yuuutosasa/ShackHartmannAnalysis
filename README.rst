@@ -15,11 +15,11 @@ enabling the measurement and reconstruction of wavefront aberrations directly fr
 The Shack-Hartmann sensor is a widely used, conceptually straightforward wavefront sensor that assesses wavefront distortions, making it ideal for adaptive optics systems in large telescopes. 
 These systems adjust images to correct for atmospheric turbulence and maintain image clarity.
 
-This library provides three distinct methods for calculating shifts within subapertures:
+**This library provides three distinct methods for calculating shifts within subapertures:**
 
--Moments: Calculates shifts based on image moments.
--Phase Correlation (PC): Uses phase correlation for shift determination.
--Normalized Cross Correlation (NCC): Determines shifts using normalized cross-correlation.
+- Moments: Calculates shifts based on image moments.
+- Phase Correlation (PC): Uses phase correlation for shift determination.
+- Normalized Cross Correlation (NCC): Determines shifts using normalized cross-correlation.
 
 
 Example
