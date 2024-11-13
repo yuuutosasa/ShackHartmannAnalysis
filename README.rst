@@ -20,3 +20,10 @@ Here is an example image of Shack-Hartmann wavefront sensor and result, showing 
 
 This example was created by the ``example.py`` script in the ``demo`` directory.
 This script should provide a good starting point to familiarize yourself with the functionality of hswfs.
+
+
+License
+----------
+
+This project is licensed under the MIT License - see the `LICENSE <https://github.com/yuuutosasa/ShackHartmannAnalysis/blob/master/LICENSE>`_ for details.
+
