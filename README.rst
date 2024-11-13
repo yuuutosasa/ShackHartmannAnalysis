@@ -26,4 +26,4 @@ License
 ----------
 
 This project is licensed under the MIT License - see the `LICENSE <https://github.com/yuuutosasa/ShackHartmannAnalysis/blob/master/LICENSE>`_ for details.
-
+Portions of this project are based on the `hswfs <https://github.com/timothygebhard/hswfs>`_ repository by Timothy Gebhard, used under MIT License. See the `LICENSE file <https://github.com/timothygebhard/hswfs/blob/master/LICENSE>`_ for more details.
