@@ -1,6 +1,9 @@
 # Ignore Python cache files
 __pycache__/
+hswfs/__pycache__/
+lib/__pycache__/
 *.py[cod]
+*.pyc
 *$py.class
 
 # Ignore ruff cache
